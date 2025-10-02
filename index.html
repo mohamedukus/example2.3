@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دروس CSS التعليمية</title>
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+      background: #f2f4f8;
+      margin: 0;
+      padding: 20px;
+      direction: rtl; /* الكتابة من اليمين لليسار */
+    }
+
+    .section {
+      background: #ffffff;
+      border: 3px solid #4a90e2;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h3 {
+      background: royalblue;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* Padding Example */
+    .padding-example {
+      border: 2px dashed navy;
+      padding: 30px;
+      background: #eaf4ff;
+    }
+
+    /* Font Example */
+    .font-example {
+      font-family: "Times New Roman", serif;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    /* Numeric Example */
+    .numeric-example {
+      font-variant-numeric: tabular-nums;
+      background: #fff7e6;
+      padding: 10px;
+    }
+
+    /* Feature Example */
+    .feature-example {
+      font-feature-settings: "smcp";
+      background: #f9e6ff;
+      padding: 10px;
+    }
+
+    /* Page Breaks (for printing/PDF) */
+    .page-break {
+      page-break-before: always;
+      border: 2px solid red;
+      background: #ffe6e6;
+      padding: 10px;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Emoji Animation */
+    .emoji {
+      font-size: 30px;
+      display: inline-block;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <h3>📘 صفحة تعليم CSS - الخصائص الأساسية</h3>
+
+  <!-- Fonts -->
+  <div class="section">
+    <h3>🅰️ خصائص الخطوط (Font Properties)</h3>
+    <p class="font-example">هذا النص بخط Times New Roman، عريض ومائل.</p>
+    <p>🔹 <b>font-family (عائلة الخط)</b>: لاختيار نوع الخط.</p>
+    <p>🔹 <b>font-size (حجم الخط)</b>: لتكبير أو تصغير النص.</p>
+    <p>🔹 <b>font-style (أسلوب الخط)</b>: عادي أو مائل.</p>
+    <p>🔹 <b>font-weight (سُمك الخط)</b>: عادي، عريض (Bold) أو أخف.</p>
+  </div>
+
+  <!-- Padding -->
+  <div class="section">
+    <h3>📏 خاصية الحشوة الداخلية (Padding)</h3>
+    <div class="padding-example">
+      هذا الصندوق لديه <b>padding: 30px</b> أي مسافة داخلية بين النص والحدود.
+    </div>
+    <p>🔹 <b>padding-top</b>: مسافة من الأعلى.</p>
+    <p>🔹 <b>padding-right</b>: مسافة من اليمين.</p>
+    <p>🔹 <b>padding-bottom</b>: مسافة من الأسفل.</p>
+    <p>🔹 <b>padding-left</b>: مسافة من اليسار.</p>
+  </div>
+
+  <!-- Numeric -->
+  <div class="section">
+    <h3>🔢 الأرقام في النصوص (Font-Variant-Numeric)</h3>
+    <p class="numeric-example">الأرقام: 1111 | 2222 | 3333 → هنا كلها بنفس العرض (tabular-nums)</p>
+    <p>👉 مفيد للجداول والفواتير حيث يجب أن تصطف الأرقام بشكل مرتب.</p>
+  </div>
+
+  <!-- Feature Settings -->
+  <div class="section">
+    <h3>🔠 إعدادات الخط المتقدمة (Font-Feature-Settings)</h3>
+    <p class="feature-example">هذا النص يظهر بشكل Small Caps (حروف صغيرة مكبرة).</p>
+    <p>👉 تُستخدم لإظهار ميزات خاصة في الخطوط مثل ligatures أو small caps.</p>
+  </div>
+
+  <!-- Page Breaks -->
+  <div class="section page-break">
+    <h3>📄 كسر الصفحة عند الطباعة (Page Breaks)</h3>
+    <p>🔹 <b>page-break-before</b>: يبدأ العنصر في صفحة جديدة.</p>
+    <p>🔹 <b>page-break-after</b>: يُجبر الصفحة على الكسر بعد العنصر.</p>
+    <p>🔹 <b>page-break-inside</b>: يمنع الكسر داخل العنصر (مفيد للجداول/الصور).</p>
+    <p>👉 تُستخدم عند طباعة الصفحة أو تحويلها إلى PDF.</p>
+  </div>
+
+  <!-- Emojis + Animation -->
+  <div class="section">
+    <h3>🎉 التعليم مع الإيموجي والأنيميشن</h3>
+    <p>تعلم CSS ممتع <span class="emoji">✨</span> <span class="emoji">📚</span> <span class="emoji">🚀</span></p>
+  </div>
+
+</body>
+</html>
